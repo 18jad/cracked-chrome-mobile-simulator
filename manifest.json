@@ -1,8 +1,8 @@
 {
-"update_url": "https://clients2.google.com/service/update2/crx",
+  "update_url": "https://clients2.google.com/service/update2/crx",
 
   "manifest_version": 3,
-  "name": "__MSG_extName__",
+  "name": "Cracked mobile simulator - responsive testing tool",
   "description": "__MSG_extDescription__",
   "default_locale": "en",
   "author": "François Duprat",
@@ -20,10 +20,7 @@
     "offscreen",
     "commands"
   ],
-  "host_permissions": [
-    "<all_urls>",
-    "*://*/*"
-  ],
+  "host_permissions": ["<all_urls>", "*://*/*"],
   "icons": {
     "32": "icons/32.png",
     "48": "icons/48.png",
@@ -55,15 +52,8 @@
   },
   "web_accessible_resources": [
     {
-      "resources": [
-        "spoofer.js",
-        "assets/**/*",
-        "css/**/*",
-        "icons/**/*"
-      ],
-      "matches": [
-        "<all_urls>"
-      ]
+      "resources": ["spoofer.js", "assets/**/*", "css/**/*", "icons/**/*"],
+      "matches": ["<all_urls>"]
     }
   ],
   "content_security_policy": {
@@ -71,8 +61,6 @@
   },
   "version": "4.2.3",
   "externally_connectable": {
-    "matches": [
-      "https://www.webmobilefirst.com/*"
-    ]
+    "matches": ["https://www.webmobilefirst.com/*"]
   }
 }
